@@ -1,0 +1,19 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: shanyigou-product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shanyigou_product
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:org/llsonginfo/shanyigou/mapper/*Mapper.xml
+  type-aliases-package: org.llsonginfo.shanyigou.domain,org.llsonginfo.shanyigou.query
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    prefer-ip-address: true
