@@ -2,7 +2,7 @@ server:
   port: 8001
 spring:
   application:
-    name: shanyigou-plat-test
+    name: shanyigou-plat
 eureka:
   client:
     service-url:
